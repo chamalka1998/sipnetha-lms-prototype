@@ -1,0 +1,47 @@
+/* Fixes added on top of the exported designs */
+html { scroll-behavior: smooth; scroll-padding-top: 6.5rem; }
+body { overflow-x: hidden; }
+img { max-width: 100%; }
+
+/* Icon names (like "school") must never show as words if the icon font is slow */
+.material-symbols-outlined {
+  display: inline-block; width: 1em; height: 1em; overflow: hidden;
+  white-space: nowrap; line-height: 1; vertical-align: middle; flex-shrink: 0;
+}
+
+/* Floating hero badges: uses the "translate" property so it never fights Tailwind transforms */
+@keyframes floaty { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
+.float-badge { animation: floaty 5s ease-in-out infinite; }
+
+/* Buttons feel pressable */
+a[class*="rounded-full"], button[class*="rounded-full"] { transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease; }
+a[class*="rounded-full"]:hover, button[class*="rounded-full"]:hover { transform: translateY(-2px); }
+a[class*="rounded-full"]:active, button[class*="rounded-full"]:active { transform: scale(.97); }
+
+/* Toast (replaces ugly browser alert boxes) */
+#toast { position: fixed; left: 50%; bottom: 1.5rem; transform: translate(-50%, 160%); transition: transform .3s ease;
+  background: #0f172a; color: #fff; padding: .85rem 1.4rem; border-radius: 9999px; font-weight: 600;
+  z-index: 200; max-width: 92vw; text-align: center; box-shadow: 0 20px 40px -10px rgba(15,23,42,.4); }
+#toast.show { transform: translate(-50%, 0); }
+
+/* Keyboard focus */
+:focus-visible { outline: 3px solid #0d9488; outline-offset: 2px; }
+::selection { background: #86f2e4; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* Mobile overflow fixes */
+html, body { overflow-x: clip; }
+.truncate { min-width: 0; }
+*:has(> .truncate) { min-width: 0; }
+h1, h2, h3 { overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  .flex.items-center.gap-2:has(> button.w-8), .flex.items-center.gap-3:has(> button.w-8) { flex-wrap: wrap; }
+}
+@media (max-width: 640px) {
+  h1.text-headline-lg { font-size: 28px; line-height: 36px; }
+  header a.whitespace-nowrap { padding-left: .9rem; padding-right: .9rem; }
+}
+main { padding-top: 6.75rem !important; }

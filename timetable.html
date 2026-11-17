@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><title>Class Timetable | SipNetha Academy</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=block" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary":"#0d2e7e","border-subtle":"#E2E8F0","tertiary-fixed":"#dce1ff","on-tertiary-fixed":"#00164e","error":"#ba1a1a","inverse-on-surface":"#eef0ff","surface-container-highest":"#dae2fd","surface-container-high":"#e2e7ff","surface-dim":"#d2d9f4","inverse-surface":"#283044","secondary-container":"#86f2e4","on-primary-fixed-variant":"#173bab","on-surface":"#131b2e","outline":"#757684","secondary":"#006a61","brand-navy":"#1E3A8A","inverse-primary":"#b8c4ff","outline-variant":"#c4c5d5","on-secondary-fixed":"#00201d","on-secondary-fixed-variant":"#005049","on-error":"#ffffff","canvas-bg":"#F8FAFC","error-container":"#ffdad6","background":"#faf8ff","primary-container":"#1e40af","primary-fixed-dim":"#b8c4ff","whatsapp-emerald":"#16A34A","surface-container-lowest":"#ffffff","surface-container-low":"#f2f3ff","primary":"#00288e","on-background":"#131b2e","surface-white":"#FFFFFF","secondary-fixed-dim":"#6bd8cb","on-tertiary-container":"#a7b9ff","tertiary-container":"#2c4696","on-primary":"#ffffff","surface-variant":"#dae2fd","surface-container":"#eaedff","surface-bright":"#faf8ff","surface":"#faf8ff","surface-tint":"#3755c3","secondary-fixed":"#89f5e7","primary-fixed":"#dde1ff","on-secondary-container":"#006f66","on-tertiary":"#ffffff","on-surface-variant":"#444653","tertiary-fixed-dim":"#b6c4ff","live-coral":"#EF4444","on-secondary":"#ffffff","on-primary-fixed":"#001453","on-tertiary-fixed-variant":"#264191","on-error-container":"#93000a","on-primary-container":"#a8b8ff","text-secondary":"#475569"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","space-3xl":"6rem","space-xs":"0.25rem","space-sm":"0.5rem","space-2xl":"4rem","space-xl":"2.5rem","margin":"2rem","gutter-mobile":"1rem","space-lg":"1.5rem","margin-mobile":"1rem","space-md":"1rem"},"fontFamily":{"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-mono-md":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"caption":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"display-hero":["Plus Jakarta Sans"],"body-md":["Inter"],"label-mono-sm":["JetBrains Mono"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-mono-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"caption":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}],"label-mono-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}]}}}}</script><link rel="stylesheet" href="css/fixes.css"></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50"><div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter pt-space-sm"><div class="h-20 px-space-md lg:px-space-lg rounded-full bg-surface-white/80 backdrop-blur-md shadow-md flex items-center justify-between"><a class="flex items-center gap-space-sm" href="index.html"><div class="w-11 h-11 rounded-full bg-primary-container flex items-center justify-center shadow-[0_4px_12px_rgba(30,64,175,0.2)]"><span class="material-symbols-outlined text-on-primary text-[24px]">school</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-brand-navy leading-none">SipNetha</span><span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-secondary font-semibold">Academy • LK</span></div></a><nav class="hidden xl:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low/70"><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="index.html">Home</a><a class="px-space-md py-2 transition-all bg-surface-container-high text-primary font-semibold rounded-full" href="timetable.html" aria-current="page">Class Timetable</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="teacher.html">Meet Teacher</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="features.html">LMS Features</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="login.html">Student Portal</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-2 px-space-md py-2 rounded-full bg-whatsapp-emerald/10 text-whatsapp-emerald hover:bg-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp</span></a><a class="whitespace-nowrap inline-flex items-center gap-2 px-space-md py-2.5 rounded-full bg-primary-container hover:bg-primary text-on-primary font-body-sm text-body-sm font-semibold shadow-[0_4px_16px_rgba(30,64,175,0.25)] hover:shadow-[0_6px_20px_rgba(30,64,175,0.35)] transition-all active:scale-[0.98]" href="login.html"><span class="material-symbols-outlined text-[18px]">key</span><span>LMS Login</span></a><button id="menu-btn" aria-label="Open menu" class="xl:hidden w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary"><span class="material-symbols-outlined">menu</span></button></div></div><div id="mobile-menu" class="hidden xl:hidden mt-2 p-3 rounded-3xl bg-surface-white shadow-xl border border-border-subtle"><a class="block px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container" href="index.html">Home</a><a class="block px-4 py-3 rounded-xl bg-surface-container-high text-primary font-semibold" href="timetable.html">Class Timetable</a><a class="block px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container" href="teacher.html">Meet Teacher</a><a class="block px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container" href="features.html">LMS Features</a><a class="block px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container" href="login.html">Student Portal</a></div></div></header><main class="w-full pt-20 bg-canvas-bg min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Announce Ribbon & Ambient Glows -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/4 -right-24 w-80 h-80 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<!-- Hero / Master Timetable Intro Module -->
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter pt-space-md pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left Content -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-white shadow-sm w-fit">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-live-coral opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-live-coral"></span>
+</span>
+<span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-live-coral font-bold">2026/2027 Academic Calendar Active</span>
+<span class="text-on-surface-variant font-label-mono-sm text-label-mono-sm">• Sri Lanka National Syllabus</span>
+</div>
+<h1 class="font-display-hero text-headline-lg lg:text-display-hero text-brand-navy tracking-tight">
+            Class Timetable &amp; <br class="hidden sm:inline"/>
+<span class="text-secondary">Batch Explorer</span>
+</h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl">
+            Synchronized national curriculum schedules for Grades 6 through 11 O/L. Choose your grade cohort, seamlessly sync weekly Zoom sessions with Google Calendar, and unlock immediate cloud recordings within 20 minutes of class conclusion.
+          </p>
+<!-- Quick Metrics Bento Bar -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm sm:p-space-md rounded-2xl bg-surface-white shadow-sm flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase">Weekly Sessions</span>
+<span class="font-headline-md text-headline-md text-brand-navy font-bold">28+ Hrs</span>
+<span class="font-caption text-caption text-secondary">Live + Discussion</span>
+</div>
+<div class="p-space-sm sm:p-space-md rounded-2xl bg-surface-white shadow-sm flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase">Languages</span>
+<span class="font-headline-md text-headline-md text-brand-navy font-bold">Bilingual</span>
+<span class="font-caption text-caption text-whatsapp-emerald">Sinhala &amp; English</span>
+</div>
+<div class="p-space-sm sm:p-space-md rounded-2xl bg-surface-white shadow-sm flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase">O/L A-Pass Rate</span>
+<span class="font-headline-md text-headline-md text-primary-container font-bold">94.8%</span>
+<span class="font-caption text-caption text-text-secondary">Island-wide ranks</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Showcase / Teacher Portrait & Student Desk -->
+<div class="lg:col-span-5 relative flex items-center justify-center">
+<div class="relative w-full max-w-md">
+<!-- Secondary Ambient Backdrop Card -->
+<div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-primary-container/20 to-secondary-fixed/30 transform rotate-2 scale-105 filter blur-lg"></div>
+<!-- Bento Mosaic Images -->
+<div class="relative rounded-3xl overflow-hidden shadow-xl bg-surface-white p-space-sm">
+<div class="grid grid-cols-12 gap-space-xs">
+<!-- Lead Instructor Portrait -->
+<div class="col-span-7 relative h-80 sm:h-96 rounded-2xl overflow-hidden group">
+<img loading="lazy" alt="Teacher Chamodya Aluthwathegedara" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" src="assets/img/teacher-1.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 text-on-primary">
+<p class="font-headline-sm text-headline-sm leading-tight">Chamodya A.</p>
+<p class="font-label-mono-sm text-label-mono-sm text-secondary-fixed">B.Sc. (Hons) Ed. • Lead Mentor</p>
+</div>
+</div>
+<!-- Live Zoom Student Experience -->
+<div class="col-span-5 flex flex-col gap-space-xs">
+<div class="relative h-44 sm:h-52 rounded-2xl overflow-hidden group bg-surface-container-high">
+<img loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Focused young Sri Lankan high school girl studying Mathematics on her laptop in an aesthetic sunny wooden desk environment with notebooks and colorful pens" src="assets/img/student-laptop.jpg"/>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-white/90 backdrop-blur-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-whatsapp-emerald font-bold">1080p Stream</span>
+</div>
+</div>
+<!-- Direct Zoom Vault Badge -->
+<div class="flex-1 rounded-2xl bg-surface-container-low p-space-sm flex flex-col justify-center gap-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-mono-sm text-label-mono-sm font-semibold uppercase">Official LMS</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">24/7 Access</span>
+<span class="font-caption text-caption text-text-secondary">Class recordings never expire until exams</span>
+</div>
+</div>
+</div>
+<!-- Floating Micro Glass Floater -->
+<div class="absolute -bottom-4 right-6 px-4 py-2.5 rounded-2xl bg-surface-white/95 backdrop-blur-md shadow-lg flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-whatsapp-emerald/15 text-whatsapp-emerald flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface text-[15px] leading-tight">Active Cohorts</p>
+<p class="font-label-mono-sm text-label-mono-sm text-text-secondary">6 Batches Enrolling</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Controls & Grade Navigation Sticky Rail -->
+<section class="w-full sticky top-20 z-40 bg-surface-white/90 backdrop-blur-md shadow-sm py-space-sm">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<!-- Grade Filter Tabs -->
+<div class="w-full md:w-auto overflow-x-auto no-scrollbar flex items-center gap-1.5 p-1 rounded-full bg-surface-container-low" id="gradeFilterContainer">
+<button class="grade-tab-btn active px-4 py-2 rounded-full font-body-sm text-body-sm font-semibold transition-all bg-primary-container text-on-primary shadow-sm" data-grade="all" onclick="filterGrade('all')">
+          All Grades
+        </button>
+<button class="grade-tab-btn px-4 py-2 rounded-full font-body-sm text-body-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-grade="g6" onclick="filterGrade('g6')">
+          Grade 6
+        </button>
+<button class="grade-tab-btn px-4 py-2 rounded-full font-body-sm text-body-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-grade="g7" onclick="filterGrade('g7')">
+          Grade 7
+        </button>
+<button class="grade-tab-btn px-4 py-2 rounded-full font-body-sm text-body-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-grade="g8" onclick="filterGrade('g8')">
+          Grade 8
+        </button>
+<button class="grade-tab-btn px-4 py-2 rounded-full font-body-sm text-body-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-grade="g9" onclick="filterGrade('g9')">
+          Grade 9
+        </button>
+<button class="grade-tab-btn px-4 py-2 rounded-full font-body-sm text-body-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-grade="g10" onclick="filterGrade('g10')">
+          Grade 10 <span class="text-[11px] opacity-75 font-normal">(Pre-O/L)</span>
+</button>
+<button class="grade-tab-btn px-4 py-2 rounded-full font-body-sm text-body-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-grade="g11" onclick="filterGrade('g11')">
+          Grade 11 <span class="text-[11px] text-live-coral font-bold uppercase">(O/L Master)</span>
+</button>
+</div>
+<!-- Quick View & Medium Switcher -->
+<div class="flex items-center gap-space-xs self-end md:self-auto">
+<div class="flex items-center bg-surface-container-low p-1 rounded-full text-on-surface-variant">
+<button class="medium-filter-btn px-3 py-1.5 rounded-full text-caption font-semibold bg-surface-white text-brand-navy shadow-sm transition-all" data-medium="all" onclick="filterMedium('all')">
+            All Mediums
+          </button>
+<button class="medium-filter-btn px-3 py-1.5 rounded-full text-caption font-semibold hover:text-brand-navy transition-all" data-medium="sinhala" onclick="filterMedium('sinhala')">
+            සිංහල මාධ්‍යය
+          </button>
+<button class="medium-filter-btn px-3 py-1.5 rounded-full text-caption font-semibold hover:text-brand-navy transition-all" data-medium="english" onclick="filterMedium('english')">
+            English Med.
+          </button>
+</div>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-white hover:bg-surface-container-low text-text-secondary hover:text-brand-navy shadow-sm transition-all font-body-sm text-body-sm" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Download PDF</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Timetable Flow: Weekly Grid & Batch Explorer -->
+<main class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter py-space-xl w-full">
+<!-- Next Scheduled Live Banner -->
+<div class="mb-space-xl p-space-md sm:p-space-lg rounded-3xl bg-gradient-to-r from-brand-navy via-primary-container to-tertiary text-on-primary shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="absolute -right-12 -bottom-12 w-64 h-64 rounded-full bg-secondary/20 blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-md z-10">
+<div class="w-14 h-14 rounded-2xl bg-live-coral flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-on-error text-[28px] animate-pulse">sensors</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-mono-sm text-label-mono-sm font-bold uppercase tracking-wider text-secondary-fixed">Next Up Today</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-white/20 font-caption text-caption text-on-primary">Starts in 42 mins</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-primary">Grade 11: O/L Science Model Paper Discussion (Paper 04)</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container">Sinhala &amp; English Medium Synchronous Zoom Session with Teacher Chamodya</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs z-10 w-full md:w-auto shrink-0">
+<a class="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-space-md py-3 rounded-full bg-whatsapp-emerald hover:bg-whatsapp-emerald/90 text-on-primary font-body-sm text-body-sm font-semibold transition-all shadow-md" href="https://wa.me/94771234567?text=Send%20Zoom%20Link%20for%20Grade%2011%20Live%20Stream" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Request Live Link</span>
+</a>
+<button class="inline-flex items-center justify-center p-3 rounded-full bg-surface-white/15 hover:bg-surface-white/25 text-on-primary transition-all" onclick="addToCalendar('Grade 11 Science Paper 04', 'SipNetha Academy Zoom Hall', '2025-03-15T18:00:00')" title="Add to Google Calendar">
+<span class="material-symbols-outlined text-[20px]">calendar_add_on</span>
+</button>
+</div>
+</div>
+<!-- Day By Day Master Timetable Schedule Section -->
+<div class="flex flex-col gap-space-xl" id="timetableDaysWrapper">
+<!-- MONDAY -->
+<div class="day-group flex flex-col gap-space-md" data-day="monday">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-brand-navy">Monday</h3>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-wider">Junior Foundation Classes</span>
+<div class="flex-1 h-px bg-border-subtle"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Card: G6 Science -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g6" data-medium="sinhala english">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 6</span>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-mono-sm text-label-mono-sm">Sinhala &amp; English</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Junior Science Explorers</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Unit 03: Plant &amp; Animal Cell Diversity, interactive lab demonstrations, and visual micro-concept notes.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">05:00 PM – 07:00 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Live Zoom + Notes Vault</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: SCI-G6</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20Grade%206%20Science" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join Grade 6 Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 6 Junior Science', 'Zoom Live Class', 'Every Monday 17:00')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card: G7 Mathematics -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g7" data-medium="sinhala">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 7</span>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-mono-sm text-label-mono-sm">සිංහල මාධ්‍යය</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Mathematics Logic &amp; Algebra</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Algebraic expressions, brackets factorization, and national past paper problem drills.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">07:15 PM – 09:15 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Live Zoom + Daily Tute</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: MTH-G7-S</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20Grade%207%20Sinhala%20Medium%20Maths" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join Grade 7 Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 7 Maths Sinhala', 'Zoom Live Class', 'Every Monday 19:15')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card: G8 Science English Med -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g8" data-medium="english">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 8</span>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-mono-sm text-label-mono-sm font-semibold">English Medium</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Integrated Science Fundamentals</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Matter, Elements &amp; Periodic Trends, Chemical Reactions with graphical breakdown schematics.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">05:30 PM – 07:30 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Bilingual Notes Vault</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: SCI-G8-E</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20Grade%208%20English%20Medium%20Science" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join Grade 8 Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 8 Science English Med', 'Zoom Live Class', 'Every Monday 17:30')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TUESDAY -->
+<div class="day-group flex flex-col gap-space-md" data-day="tuesday">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-brand-navy">Tuesday</h3>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-wider">Mid-School Science Core</span>
+<div class="flex-1 h-px bg-border-subtle"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Card: G9 Science Sinhala -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g9" data-medium="sinhala">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 9</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-mono-sm text-label-mono-sm">සිංහල මාධ්‍යය</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Science &amp; Technology Master</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Force &amp; Motion, Pressure applications, Archimedes principle with step-by-step mathematical deductions.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">05:30 PM – 07:30 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Live Zoom + Paper Set</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: SCI-G9-S</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20Grade%209%20Science%20Sinhala" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join Grade 9 Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 9 Science Sinhala', 'Zoom Live Class', 'Every Tuesday 17:30')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card: G10 Pre-OL Maths English -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g10" data-medium="english">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 10 (Pre-O/L)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-mono-sm text-label-mono-sm font-semibold">English Medium</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Mathematics Pure Core &amp; Geometry</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Circles Theorems, Quadratic Equations &amp; Graphs with interactive Desmos visual proof models.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">07:30 PM – 09:45 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Fast Model Paper Drills</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: MTH-G10-E</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20Grade%2010%20English%20Medium%20Maths" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join Grade 10 Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 10 Maths English Med', 'Zoom Live Class', 'Every Tuesday 19:30')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- WEDNESDAY -->
+<div class="day-group flex flex-col gap-space-md" data-day="wednesday">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-whatsapp-emerald"></span>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-brand-navy">Wednesday</h3>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-wider">O/L Intensive Revision &amp; ICT</span>
+<div class="flex-1 h-px bg-border-subtle"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Card: G11 O/L Science Sinhala -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g11" data-medium="sinhala">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-live-coral/10 text-live-coral font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 11 (O/L Master)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-mono-sm text-label-mono-sm">සිංහල මාධ්‍යය</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">O/L Science Theory &amp; Practical Analysis</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Chemistry Reaction Rates, Organic Chemistry fundamentals, and past 15-year structured essay deep dive.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">06:00 PM – 08:30 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Marking Scheme Breakdown</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: OL-SCI-S</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Enroll%20me%20in%20Grade%2011%20O/L%20Science%20Masterclass" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join O/L Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 11 Science Masterclass', 'Zoom Live Class', 'Every Wednesday 18:00')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card: G10/G11 ICT Special -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g10 g11" data-medium="english sinhala">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-primary-container font-label-mono-sm text-label-mono-sm font-bold uppercase">Grades 10 &amp; 11</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-mono-sm text-label-mono-sm">Bilingual Batch</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Information &amp; Communication Technology</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Python Programming logic, HTML/CSS web design, and digital logic gate truth tables.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">04:00 PM – 05:45 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Live Coding &amp; PDF Packets</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: ICT-OL-BI</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20O/L%20ICT%20Batch" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join ICT Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('O/L ICT Bilingual', 'Zoom Live Class', 'Every Wednesday 16:00')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- THURSDAY -->
+<div class="day-group flex flex-col gap-space-md" data-day="thursday">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-brand-navy">Thursday</h3>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-wider">Junior Mathematics &amp; Logic Booster</span>
+<div class="flex-1 h-px bg-border-subtle"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Card: G8 Maths Sinhala -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g8" data-medium="sinhala">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 8</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-mono-sm text-label-mono-sm">සිංහල මාධ්‍යය</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Mathematics Logic Foundation</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Linear equations, Cartesian plane graphs, and geometric construction principles.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">05:30 PM – 07:30 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Synchronized MCQ Quizzes</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: MTH-G8-S</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20Grade%208%20Maths" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join Grade 8 Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 8 Maths Sinhala', 'Zoom Live Class', 'Every Thursday 17:30')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card: G9 Maths English -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g9" data-medium="english">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 9</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-mono-sm text-label-mono-sm font-semibold">English Medium</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Advanced Analytical Mathematics</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Simultaneous equations, percentage business arithmetic, and theorem justifications.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">07:45 PM – 09:45 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Live Homework Review</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: MTH-G9-E</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20Grade%209%20Maths%20English" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join Grade 9 Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 9 Maths English Med', 'Zoom Live Class', 'Every Thursday 19:45')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FRIDAY -->
+<div class="day-group flex flex-col gap-space-md" data-day="friday">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-live-coral"></span>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-brand-navy">Friday</h3>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-wider">O/L Mathematics Masterclass</span>
+<div class="flex-1 h-px bg-border-subtle"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Card: G11 O/L Maths Sinhala -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g11" data-medium="sinhala">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-live-coral/10 text-live-coral font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 11 (O/L Master)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-mono-sm text-label-mono-sm">සිංහල මාධ්‍යය</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">O/L Mathematics Speed &amp; Accuracy Master</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Paper II Section B: Statistics, Probability, Matrices, and Trigonometry proof shortcuts.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">06:00 PM – 09:00 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> 100-Model Paper Scheme</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: OL-MTH-S</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20join%20Grade%2011%20Maths%20Speed%20Master" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join O/L Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 11 Maths Speed Master', 'Zoom Live Class', 'Every Friday 18:00')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card: G10 Science Sinhala -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g10" data-medium="sinhala">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 10 (Pre-O/L)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-mono-sm text-label-mono-sm">සිංහල මාධ්‍යය</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Science Comprehensive Theory</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Genetics, Inheritance patterns, and Newton laws of motion with term test past exam papers.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">03:30 PM – 05:45 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Interactive Lab Animations</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: SCI-G10-S</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20Grade%2010%20Sinhala%20Science" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join Grade 10 Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 10 Science Sinhala', 'Zoom Live Class', 'Every Friday 15:30')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SATURDAY & SUNDAY WEEKEND MARATHON -->
+<div class="day-group flex flex-col gap-space-md" data-day="weekend">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-brand-navy"></span>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-brand-navy">Saturday &amp; Sunday</h3>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-wider">English Medium Specials &amp; Paper Discussions</span>
+<div class="flex-1 h-px bg-border-subtle"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Card: G11 English Med Science -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g11" data-medium="english">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-live-coral/10 text-live-coral font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 11 (O/L Master)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-mono-sm text-label-mono-sm font-semibold">English Medium</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">O/L Science Theory &amp; Western Province Papers</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Complete syllabus recap with targeted timing techniques for scoring A-Grades in English medium national papers.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">Saturday 08:30 AM – 11:30 AM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Live Q&amp;A Mic Unmute</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: OL-SCI-E</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20join%20Grade%2011%20English%20Medium%20Science" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join O/L Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 11 Science English Med', 'Zoom Live Class', 'Every Saturday 08:30')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card: G11 English Med Maths -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g11" data-medium="english">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-live-coral/10 text-live-coral font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 11 (O/L Master)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-mono-sm text-label-mono-sm font-semibold">English Medium</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">O/L Mathematics Target Paper Clinic</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Speed tests on geometric circle proofs, probability tree diagrams, and 10-mark full structured essay questions.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">Sunday 01:00 PM – 04:00 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Real-time Timer Drills</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: OL-MTH-E</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20join%20Grade%2011%20English%20Medium%20Maths" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join O/L Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 11 Maths Target Clinic', 'Zoom Live Class', 'Every Sunday 13:00')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card: G10 Science English Med -->
+<div class="batch-card group p-space-lg rounded-3xl bg-surface-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between gap-space-md" data-grade="g10" data-medium="english">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-2">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-mono-sm text-label-mono-sm font-bold uppercase">Grade 10 (Pre-O/L)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-mono-sm text-label-mono-sm font-semibold">English Medium</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-brand-navy group-hover:text-primary transition-colors">Physical &amp; Bio Science Systems</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Human Circulatory &amp; Respiratory systems, Electrolysis, and Current Electricity equations.</p>
+<div class="mt-space-xs p-space-sm rounded-2xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">Sunday 04:30 PM – 07:00 PM</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-border-subtle/50">
+<div class="flex items-center justify-between text-caption font-caption text-text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-whatsapp-emerald">check_circle</span> Colored Graphical Tutes</span>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Code: SCI-G10-E</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-whatsapp-emerald/10 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567?text=I%20want%20to%20enroll%20in%20Grade%2010%20English%20Science" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Join Grade 10 Desk</span>
+</a>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-text-secondary hover:text-brand-navy transition-all" onclick="addToCalendar('Grade 10 Science English Med', 'Zoom Live Class', 'Every Sunday 16:30')" title="Add to Calendar">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Direct Admission & Consultation Help Box Bento Block -->
+<div class="mt-space-3xl rounded-3xl bg-surface-white p-space-lg lg:p-space-2xl shadow-md relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container w-fit">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span class="font-label-mono-sm text-label-mono-sm font-bold uppercase">Direct Admission Desk</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-brand-navy">Need Help Choosing the Right Cohort?</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+            Whether your child needs a confidence booster in Grade 8 Algebra or high-octane A-star revision for the upcoming O/L examination, Teacher Chamodya and our academic counselors are available on WhatsApp to guide batch placements, tuition fee structures, and postal delivery of printed tute packs.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[20px]">local_shipping</span>
+<span class="font-body-sm text-body-sm text-on-surface">Island-wide Tute Courier Delivery</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[20px]">lock_reset</span>
+<span class="font-body-sm text-body-sm text-on-surface">Missed Class Instant Replays</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[20px]">forum</span>
+<span class="font-body-sm text-body-sm text-on-surface">Dedicated Doubt-Clearing Groups</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-sm p-space-md rounded-2xl bg-surface-container-low">
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-wider font-semibold">Immediate Assistance</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-brand-navy font-bold">+94 77 123 4567</span>
+<span class="font-caption text-caption text-text-secondary">Mon – Sun: 8:00 AM – 9:00 PM</span>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-space-md rounded-full bg-whatsapp-emerald text-on-primary font-body-sm text-body-sm font-semibold shadow-md hover:bg-whatsapp-emerald/90 transition-all" href="https://wa.me/94771234567?text=Hello%20Teacher%20Chamodya,%20I%20need%20guidance%20with%20batch%20enrollment" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chat on WhatsApp Directly</span>
+</a>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-space-md rounded-full bg-surface-white text-brand-navy font-body-sm text-body-sm font-semibold shadow-sm hover:bg-surface-container-high transition-all" data-path="student-dashboard" href="dashboard.html">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span>Existing Student LMS Portal</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="calendarToast">
+<div class="px-space-md py-3 rounded-2xl bg-brand-navy text-on-primary shadow-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[24px]">event_available</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[14px] leading-tight">Calendar Event Created</span>
+<span class="font-caption text-caption text-on-primary-container" id="toastMessage">Synced with your schedule</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter by Grade Functionality
+  function filterGrade(gradeKey) {
+    // Update button states
+    const tabs = document.querySelectorAll('.grade-tab-btn');
+    tabs.forEach(btn => {
+      if (btn.getAttribute('data-grade') === gradeKey) {
+        btn.className = 'grade-tab-btn active px-4 py-2 rounded-full font-body-sm text-body-sm font-semibold transition-all bg-primary-container text-on-primary shadow-sm';
+      } else {
+        btn.className = 'grade-tab-btn px-4 py-2 rounded-full font-body-sm text-body-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container';
+      }
+    });
+
+    const cards = document.querySelectorAll('.batch-card');
+    cards.forEach(card => {
+      const cardGrades = card.getAttribute('data-grade').split(' ');
+      if (gradeKey === 'all' || cardGrades.includes(gradeKey)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Check empty day containers and hide headers if no cards are visible
+    document.querySelectorAll('.day-group').forEach(group => {
+      const visibleCards = group.querySelectorAll('.batch-card[style*="display: flex"], .batch-card:not([style*="display: none"])');
+      const hiddenCards = group.querySelectorAll('.batch-card[style*="display: none"]');
+      const allCards = group.querySelectorAll('.batch-card');
+      
+      if (hiddenCards.length === allCards.length && gradeKey !== 'all') {
+        group.style.display = 'none';
+      } else {
+        group.style.display = 'flex';
+      }
+    });
+  }
+
+  // Filter by Medium Functionality
+  function filterMedium(mediumKey) {
+    const mediumBtns = document.querySelectorAll('.medium-filter-btn');
+    mediumBtns.forEach(btn => {
+      if (btn.getAttribute('data-medium') === mediumKey) {
+        btn.className = 'medium-filter-btn px-3 py-1.5 rounded-full text-caption font-semibold bg-surface-white text-brand-navy shadow-sm transition-all';
+      } else {
+        btn.className = 'medium-filter-btn px-3 py-1.5 rounded-full text-caption font-semibold hover:text-brand-navy transition-all';
+      }
+    });
+
+    const cards = document.querySelectorAll('.batch-card');
+    cards.forEach(card => {
+      const cardMedium = card.getAttribute('data-medium');
+      if (mediumKey === 'all' || cardMedium.includes(mediumKey)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Interactive Add-to-Calendar Micro Toast
+  function addToCalendar(title, location, timeString) {
+    const toast = document.getElementById('calendarToast');
+    const toastMessage = document.getElementById('toastMessage');
+    toastMessage.textContent = title + ' reminder set (' + location + ')';
+
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 3200);
+  }
+</script></main><footer class="w-full bg-surface-white mt-space-3xl"><div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-4 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">school</span></div><span class="font-headline-sm text-headline-sm text-brand-navy">SipNetha Academy</span></div><p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">Sri Lanka\'s authoritative online tuition powerhouse for Grades 6–11. Combining live high-definition Zoom masterclasses, gamified paper evaluations, and automated parent progress tracking.</p><div class="flex items-center gap-space-xs mt-space-xs"><span class="material-symbols-outlined text-live-coral text-[20px]">emergency_home</span><span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">Direct Academic Hotline:</span><span class="font-label-mono-md text-label-mono-md text-primary font-bold">+94 11 289 4000</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">National Syllabus</h4><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-text-secondary"><li>• Grades 6 to 9 Foundation Sciences &amp; Mathematics</li><li>• Grade 10 O/L Acceleration Track</li><li>• Grade 11 O/L Intensive Revision &amp; Paper Class</li><li>• Sinhala Medium &amp; English Medium Parallel Batches</li><li>• Provincial Exam &amp; Model Paper Dissections</li></ul></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">WhatsApp Batch Desks</h4><p class="font-caption text-caption text-text-secondary">Instant class links, zoom passes, and homework alerts:</p><div class="flex flex-wrap gap-2"><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%206%20Desk" target="_blank">Grade 6 Desk</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%207%20Desk" target="_blank">Grade 7 Desk</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%208%20Desk" target="_blank">Grade 8 Desk</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%209%20Desk" target="_blank">Grade 9 Desk</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%2010%20O/L" target="_blank">Grade 10 O/L</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%2011%20Master%20Batch" target="_blank">Grade 11 Master Batch</a></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Student LMS</h4><div class="flex flex-col gap-2 font-body-sm text-body-sm"><a class="text-primary hover:text-primary-container font-semibold transition-colors flex items-center gap-1.5" data-path="student-portal" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20lock_open%20%20Access%20Portal" target="_blank"><span class="material-symbols-outlined text-[16px]">lock_open</span><span>Access Portal</span></a><a class="text-text-secondary hover:text-on-surface transition-colors flex items-center gap-1.5" data-path="class-timetable" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20schedule%20%20Term%20Schedule" target="_blank"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Term Schedule</span></a><a class="text-text-secondary hover:text-on-surface transition-colors flex items-center gap-1.5" data-path="lms-features" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20cloud_download%20%20Lecture%20Recordings" target="_blank"><span class="material-symbols-outlined text-[16px]">cloud_download</span><span>Lecture Recordings</span></a><a class="text-text-secondary hover:text-on-surface transition-colors flex items-center gap-1.5" data-path="meet-teacher" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20verified%20%20Academic%20Staff" target="_blank"><span class="material-symbols-outlined text-[16px]">verified</span><span>Academic Staff</span></a></div></div></div><div class="mt-space-xl pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-caption text-caption text-text-secondary"><p>© 2025 SipNetha Academy Sri Lanka. Registered Educational Organization. All Rights Reserved.</p><div class="flex items-center gap-space-md"><span class="font-label-mono-sm text-label-mono-sm text-secondary font-semibold">National Curriculum Certified</span><span>•</span><span class="font-label-mono-sm text-label-mono-sm text-text-secondary">Sinhala &amp; English Medium</span></div></div></div></footer><script src="js/site.js"></script></body></html>

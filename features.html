@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><title>LMS Features | SipNetha Academy</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=block" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#00201d","surface-dim":"#d2d9f4","inverse-primary":"#b8c4ff","surface-container-highest":"#dae2fd","on-background":"#131b2e","on-secondary":"#ffffff","primary":"#00288e","background":"#faf8ff","inverse-surface":"#283044","error-container":"#ffdad6","tertiary-fixed-dim":"#b6c4ff","error":"#ba1a1a","on-secondary-container":"#006f66","on-tertiary-fixed":"#00164e","surface-container-high":"#e2e7ff","on-primary-fixed":"#001453","text-secondary":"#475569","surface-container-low":"#f2f3ff","primary-container":"#1e40af","surface-variant":"#dae2fd","primary-fixed-dim":"#b8c4ff","outline":"#757684","secondary-container":"#86f2e4","on-primary-container":"#a8b8ff","on-error-container":"#93000a","secondary-fixed":"#89f5e7","tertiary-container":"#2c4696","on-secondary-fixed-variant":"#005049","border-subtle":"#E2E8F0","on-tertiary":"#ffffff","on-surface":"#131b2e","whatsapp-emerald":"#16A34A","tertiary-fixed":"#dce1ff","tertiary":"#0d2e7e","surface":"#faf8ff","surface-bright":"#faf8ff","on-error":"#ffffff","surface-container-lowest":"#ffffff","brand-navy":"#1E3A8A","on-surface-variant":"#444653","on-tertiary-fixed-variant":"#264191","live-coral":"#EF4444","on-primary":"#ffffff","inverse-on-surface":"#eef0ff","surface-container":"#eaedff","surface-tint":"#3755c3","secondary":"#006a61","on-tertiary-container":"#a7b9ff","outline-variant":"#c4c5d5","surface-white":"#FFFFFF","secondary-fixed-dim":"#6bd8cb","canvas-bg":"#F8FAFC","on-primary-fixed-variant":"#173bab","primary-fixed":"#dde1ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-lg":"1.5rem","space-2xl":"4rem","margin-mobile":"1rem","margin":"2rem","gutter-mobile":"1rem","space-3xl":"6rem","space-xs":"0.25rem","gutter":"1.5rem","space-md":"1rem","space-xl":"2.5rem"},"fontFamily":{"body-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-mono-md":["JetBrains Mono"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"caption":["Inter"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-mono-sm":["JetBrains Mono"],"body-lg":["Inter"]},"fontSize":{"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-mono-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"caption":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-mono-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script><link rel="stylesheet" href="css/fixes.css"></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50"><div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter pt-space-sm"><div class="h-20 px-space-md lg:px-space-lg rounded-full bg-surface-white/80 backdrop-blur-md shadow-md flex items-center justify-between"><a class="flex items-center gap-space-sm" href="index.html"><div class="w-11 h-11 rounded-full bg-primary-container flex items-center justify-center shadow-[0_4px_12px_rgba(30,64,175,0.2)]"><span class="material-symbols-outlined text-on-primary text-[24px]">school</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-brand-navy leading-none">SipNetha</span><span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-secondary font-semibold">Academy • LK</span></div></a><nav class="hidden xl:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low/70"><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="index.html">Home</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="timetable.html">Class Timetable</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="teacher.html">Meet Teacher</a><a class="px-space-md py-2 transition-all bg-surface-container-high text-primary font-semibold rounded-full" href="features.html" aria-current="page">LMS Features</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" href="login.html">Student Portal</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-2 px-space-md py-2 rounded-full bg-whatsapp-emerald/10 text-whatsapp-emerald hover:bg-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp</span></a><a class="whitespace-nowrap inline-flex items-center gap-2 px-space-md py-2.5 rounded-full bg-primary-container hover:bg-primary text-on-primary font-body-sm text-body-sm font-semibold shadow-[0_4px_16px_rgba(30,64,175,0.25)] hover:shadow-[0_6px_20px_rgba(30,64,175,0.35)] transition-all active:scale-[0.98]" href="login.html"><span class="material-symbols-outlined text-[18px]">key</span><span>LMS Login</span></a><button id="menu-btn" aria-label="Open menu" class="xl:hidden w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary"><span class="material-symbols-outlined">menu</span></button></div></div><div id="mobile-menu" class="hidden xl:hidden mt-2 p-3 rounded-3xl bg-surface-white shadow-xl border border-border-subtle"><a class="block px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container" href="index.html">Home</a><a class="block px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container" href="timetable.html">Class Timetable</a><a class="block px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container" href="teacher.html">Meet Teacher</a><a class="block px-4 py-3 rounded-xl bg-surface-container-high text-primary font-semibold" href="features.html">LMS Features</a><a class="block px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container" href="login.html">Student Portal</a></div></div></header><main class="w-full pt-20 bg-canvas-bg min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Layer -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 -right-40 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-80 -left-32 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Section 1: Feature Showcase Hero -->
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter pt-space-xl pb-space-2xl">
+<!-- Breadcrumb & Badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="inline-flex items-center gap-2 px-space-md py-1.5 rounded-full bg-surface-container-high text-primary font-label-mono-sm text-label-mono-sm font-semibold">
+<span class="inline-block w-2 h-2 rounded-full bg-whatsapp-emerald animate-pulse"></span>
+          NEXT-GEN SRI LANKAN EDTECH • O/L SCIENCE &amp; MATHS
+        </div>
+<div class="hidden sm:flex items-center gap-space-xs font-label-mono-sm text-label-mono-sm text-text-secondary">
+<span class="text-secondary font-bold">100% NATIONAL SYLLABUS</span>
+<span>•</span>
+<span>GRADES 6–11</span>
+<span>•</span>
+<span class="text-brand-navy font-semibold">SINHALA &amp; ENGLISH MEDIUM</span>
+</div>
+</div>
+<!-- Main Headline Block -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<h1 class="font-display-hero text-display-hero text-brand-navy tracking-tight">
+            A World-Class Virtual Classroom Engineered for Island Rank Excellence.
+          </h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl">
+            Designed specifically for Sri Lankan secondary students. Seamless Sinhala and English medium Science &amp; Mathematics education with uninterrupted HD live streaming, permanent revision vaults, and diagnostic performance tracking right from your laptop, tablet, or smartphone.
+          </p>
+<!-- Dual Call to Actions -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center gap-2 px-space-lg py-3 rounded-full bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold shadow-md hover:bg-primary transition-all active:scale-[0.98]" href="#core-modules">
+<span>Explore Features Below</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+<a class="inline-flex items-center gap-2 px-space-lg py-3 rounded-full bg-surface-white text-brand-navy font-body-sm text-body-sm font-semibold shadow-sm hover:bg-surface-container-low transition-all" data-path="student-lms-portal" href="login.html">
+<span class="material-symbols-outlined text-primary text-[18px]">lock_open</span>
+<span>Login to Student Portal</span>
+</a>
+<a class="inline-flex items-center gap-2 px-space-md py-3 rounded-full bg-whatsapp-emerald/10 text-whatsapp-emerald hover:bg-whatsapp-emerald hover:text-on-primary font-body-sm text-body-sm font-semibold transition-all" href="https://wa.me/94771234567" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="hidden sm:inline">WhatsApp Helpdesk</span>
+</a>
+</div>
+<!-- Quick Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-md max-w-xl">
+<div class="p-space-sm rounded-xl bg-surface-white shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-brand-navy font-bold">1,500+</span>
+<span class="font-caption text-caption text-text-secondary">O/L 'A' Passes in Science &amp; Maths</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-white shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">99.8%</span>
+<span class="font-caption text-caption text-text-secondary">Streaming Uptime Island-Wide</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-white shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">24/7</span>
+<span class="font-caption text-caption text-text-secondary">Cloud Video Vault Access</span>
+</div>
+</div>
+</div>
+<!-- Hero Graphic Enclosure: Dark Classroom Board Preview with Floating Glass Chips -->
+<div class="lg:col-span-5 relative">
+<!-- Glass Accent Halo -->
+<div class="relative rounded-3xl overflow-hidden shadow-xl bg-inverse-surface text-inverse-on-surface p-space-sm">
+<!-- Simulated Classroom Interface Top Bar -->
+<div class="flex items-center justify-between px-space-md py-2 bg-on-background/40 rounded-xl mb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-live-coral animate-ping"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-primary font-bold tracking-wider">LIVE CLASS ACTIVE</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-inverse-primary">GRADE 10 • FORCE &amp; MOTION</span>
+</div>
+<!-- Main Interactive Screen Area -->
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-black/40">
+<img loading="lazy" class="w-full h-full object-cover" data-alt="A modern interactive online classroom interface on a dark blackboard background, displaying Dr. Sarah Jensen teaching physics and mathematics with colorful hand-drawn free-body force diagrams, Newton's second law equations, a high school live chat sidebar, student webcam grid, and real-time interactive digital whiteboard toolbars in vibrant neon blue and amber tones." src="assets/img/teacher-3.jpg"/>
+<!-- Subtle HUD Overlay -->
+<div class="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-inverse-surface/85 backdrop-blur-md flex items-center justify-between text-inverse-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">brush</span>
+<span class="font-label-mono-sm text-label-mono-sm font-semibold">Smart Vector Ink Engine</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-whatsapp-emerald">Synchronized 12ms</span>
+</div>
+</div>
+<!-- Floating Bento Badges -->
+<div class="absolute -top-3 -left-3 px-space-md py-2 rounded-full bg-surface-white/95 backdrop-blur-md shadow-lg text-brand-navy flex items-center gap-2 font-label-mono-sm text-label-mono-sm font-bold">
+<span class="material-symbols-outlined text-live-coral text-[18px]">hd</span>
+<span>Ultra HD 1080p Stream</span>
+</div>
+<div class="absolute -bottom-4 -right-2 px-space-md py-2 rounded-full bg-surface-white/95 backdrop-blur-md shadow-lg text-secondary flex items-center gap-2 font-label-mono-sm text-label-mono-sm font-bold">
+<span class="material-symbols-outlined text-secondary text-[18px]">cloud_sync</span>
+<span>Zero-Buffering Local CDN</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Deep Dive into 4 Core LMS Modules -->
+<div class="w-full bg-surface-container-low py-space-3xl" id="core-modules">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-secondary font-bold">ARCHITECTED FOR IMPACT</span>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy mt-1">
+            The 4 Engine Modules of Chamodya LMS
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary max-w-md">
+          A bespoke learning management system replacing fragmented WhatsApp groups and confusing links with a unified, high-octane academic dashboard.
+        </p>
+</div>
+<!-- Module 1: 1-Click Interactive Live Zoom Classrooms -->
+<div class="p-space-lg lg:p-space-xl rounded-3xl bg-surface-white shadow-md grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-sm order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-mono-sm text-label-mono-sm font-bold w-fit">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>MODULE 01 • SYNCHRONOUS STREAMING</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy">
+            1-Click Interactive Live Zoom Classrooms
+          </h3>
+<p class="font-body-md text-body-md text-text-secondary">
+            Never misplace another Zoom link or passcode. Access authenticated, single-click entry into weekly high-definition live sessions with crystal-clear audio and split-screen teacher visuals.
+          </p>
+<ul class="flex flex-col gap-3 font-body-sm text-body-sm text-on-surface mt-space-xs">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+<span><strong>Dual View Camera System:</strong> High-definition teacher portrait simultaneously alongside the digital blackboard and microscope feeds.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+<span><strong>Interactive In-Class Live Polls:</strong> Real-time rapid fire MCQ quizzes during the lecture with immediate diagnostic answer breakdowns.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+<span><strong>Direct Question Mic Queue:</strong> Monitored hand-raise functionality so students can voice doubts directly to Sir Chamodya without chaotic chat spam.</span>
+</li>
+</ul>
+<div class="pt-space-xs flex items-center gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-semibold">Integrations:</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-label-mono-sm text-label-mono-sm">Zoom Pro Enterprise</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-label-mono-sm text-label-mono-sm">Low-Bandwidth Mode</span>
+</div>
+</div>
+<div class="lg:col-span-6 order-1 lg:order-2">
+<div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+<img loading="lazy" class="w-full h-80 object-cover" data-alt="A group of smiling Sri Lankan secondary school students in crisp white school uniforms gathered enthusiastically around an iPad and notebooks in a bright, modern science classroom with sunlight, working on math and physics problems together with textbooks and colorful periodic tables." src="assets/img/students.jpg"/>
+<div class="absolute bottom-4 left-4 right-4 p-space-sm rounded-xl bg-surface-white/90 backdrop-blur-md flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[20px]">groups</span>
+<span class="font-body-sm text-body-sm font-semibold">Collaborative Cohorts</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary">Sinhala &amp; English Batches</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Module 2: 24/7 Lecture Recording Vault & Chapterized Playback -->
+<div class="p-space-lg lg:p-space-xl rounded-3xl bg-surface-white shadow-md grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6">
+<div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+<img loading="lazy" class="w-full h-80 object-cover" data-alt="A happy Sri Lankan teenage schoolgirl sitting comfortably at her wooden study desk at home, taking handwritten notes in an open workbook while watching a video lesson on her laptop screen in a warm sunlit study room with bookshelves and lush green garden view outside." src="assets/img/student-laptop.jpg"/>
+<!-- Video scrubber mockup badge -->
+<div class="absolute top-4 left-4 p-space-sm rounded-xl bg-surface-white/95 backdrop-blur-md shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">play_circle</span>
+<span class="font-label-mono-sm text-label-mono-sm font-semibold">Speed: 1.25x • 1.5x • 2.0x</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-inverse-surface/90 text-inverse-on-surface flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm truncate">Chapter 4: Electrolysis &amp; Chemical Cells</span>
+<span class="font-label-mono-sm text-label-mono-sm text-whatsapp-emerald font-bold">100% Watched</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-mono-sm text-label-mono-sm font-bold w-fit">
+<span class="material-symbols-outlined text-[16px]">video_library</span>
+<span>MODULE 02 • ASYNCHRONOUS REVISION</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy">
+            24/7 Lecture Recording Vault with Chapterized Playback
+          </h3>
+<p class="font-body-md text-body-md text-text-secondary">
+            Never worry about school sports meets, power outages, or illness causing missed work. Every live session is processed into a searchable, indexed video vault within 4 hours.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-2 text-brand-navy font-semibold font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">av_timer</span>
+<span>Variable Speed</span>
+</div>
+<p class="font-caption text-caption text-text-secondary">Smooth 1.25x, 1.5x, and 2.0x playback for rapid exam-eve recaps.</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-2 text-brand-navy font-semibold font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">bookmarks</span>
+<span>Topic Timestamps</span>
+</div>
+<p class="font-caption text-caption text-text-secondary">Skip straight to tricky theorem proofs without scrubbing endlessly.</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-2 text-brand-navy font-semibold font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[18px]">verified</span>
+<span>Permanent Validity</span>
+</div>
+<p class="font-caption text-caption text-text-secondary">Recordings stay active until the final day of your National O/L exams.</p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-2 text-brand-navy font-semibold font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary-container text-[18px]">sync_saved_locally</span>
+<span>Sync Notes</span>
+</div>
+<p class="font-caption text-caption text-text-secondary">Embedded theory whiteboards pinned directly alongside the video player.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Module 3: Gamified MCQ Arena & National Leaderboards -->
+<div class="p-space-lg lg:p-space-xl rounded-3xl bg-surface-white shadow-md grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-sm order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-live-coral/10 text-live-coral font-label-mono-sm text-label-mono-sm font-bold w-fit">
+<span class="material-symbols-outlined text-[16px]">sports_esports</span>
+<span>MODULE 03 • EXAM PRACTICE</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy">
+            Gamified MCQ Arena &amp; Island Leaderboards
+          </h3>
+<p class="font-body-md text-body-md text-text-secondary">
+            Master the time pressure of O/L Paper 1. Compete against thousands of fellow Sri Lankan students in timed chapter blitzes that evaluate accuracy, pace, and conceptual depth.
+          </p>
+<!-- Interactive Stat Bars / Mini Data Visualization -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-2xl bg-surface-container-low mt-space-xs">
+<div class="flex justify-between items-center font-label-mono-sm text-label-mono-sm">
+<span class="text-brand-navy font-bold">Paper 1 Speed Metric (Target: 45s/Q)</span>
+<span class="text-whatsapp-emerald font-semibold">38s Avg achieved</span>
+</div>
+<!-- Progress Line Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-whatsapp-emerald rounded-full transition-all" style="width: 82%;"></div>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-surface-container">
+<div>
+<span class="font-caption text-caption text-text-secondary block">National Rank</span>
+<span class="font-label-mono-md text-label-mono-md text-brand-navy font-bold">#14 of 3,820</span>
+</div>
+<div>
+<span class="font-caption text-caption text-text-secondary block">Accuracy</span>
+<span class="font-label-mono-md text-label-mono-md text-secondary font-bold">94.2%</span>
+</div>
+<div>
+<span class="font-caption text-caption text-text-secondary block">Weak Area</span>
+<span class="font-label-mono-md text-label-mono-md text-live-coral font-bold">Plant Biology</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs font-body-sm text-body-sm text-text-secondary">
+<span class="material-symbols-outlined text-secondary text-[20px]">insights</span>
+<span>Automated diagnostic reports highlight exact textbook pages for revision.</span>
+</div>
+</div>
+<div class="lg:col-span-6 order-1 lg:order-2">
+<!-- Leaderboard Card UI Component -->
+<div class="p-space-md rounded-2xl bg-surface-white shadow-md border-0 flex flex-col gap-3">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-live-coral text-[22px]">military_tech</span>
+<span class="font-headline-sm text-headline-sm text-brand-navy">National O/L Top Performers</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-mono-sm text-label-mono-sm text-text-secondary">Grade 11 Week 8</span>
+</div>
+<!-- Rank List -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-high/60">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-mono-sm text-label-mono-sm font-bold">1</span>
+<div>
+<p class="font-body-sm text-body-sm font-bold text-on-surface">Kavindu Jayasundara</p>
+<p class="font-caption text-caption text-text-secondary">Ananda College • Colombo</p>
+</div>
+</div>
+<span class="font-label-mono-md text-label-mono-md font-bold text-whatsapp-emerald">100 / 100</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-brand-navy flex items-center justify-center font-label-mono-sm text-label-mono-sm font-bold">2</span>
+<div>
+<p class="font-body-sm text-body-sm font-bold text-on-surface">Methmi Fernando</p>
+<p class="font-caption text-caption text-text-secondary">Visakha Vidyalaya • Colombo</p>
+</div>
+</div>
+<span class="font-label-mono-md text-label-mono-md font-bold text-whatsapp-emerald">98 / 100</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-brand-navy flex items-center justify-center font-label-mono-sm text-label-mono-sm font-bold">3</span>
+<div>
+<p class="font-body-sm text-body-sm font-bold text-on-surface">Senura Wickramasinghe</p>
+<p class="font-caption text-caption text-text-secondary">Dharmaraja College • Kandy</p>
+</div>
+</div>
+<span class="font-label-mono-md text-label-mono-md font-bold text-whatsapp-emerald">96 / 100</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-brand-navy flex items-center justify-center font-label-mono-sm text-label-mono-sm font-bold">4</span>
+<div>
+<p class="font-body-sm text-body-sm font-bold text-on-surface">Fathima Zainab</p>
+<p class="font-caption text-caption text-text-secondary">Muslim Ladies College • Galle</p>
+</div>
+</div>
+<span class="font-label-mono-md text-label-mono-md font-bold text-whatsapp-emerald">95 / 100</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Module 4: Smart Tute Dispatch & High-Res PDF Model Papers -->
+<div class="p-space-lg lg:p-space-xl rounded-3xl bg-surface-white shadow-md grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6">
+<div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+<img loading="lazy" class="w-full h-80 object-cover" data-alt="A brightly lit modern high school science laboratory table filled with vibrant DNA helix models, glowing geometric polyhedron shapes, glowing neon formulas, a digital tablet with physics calculations, colorful chemical glassware, and an engaged teacher explaining scientific concepts." src="assets/img/lab.jpg"/>
+<div class="absolute bottom-4 left-4 right-4 p-space-sm rounded-xl bg-surface-white/95 backdrop-blur-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">local_shipping</span>
+<span class="font-body-sm text-body-sm font-semibold text-brand-navy">Islandwide Courier Delivery</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold">Direct to Doorstep</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 text-primary-container font-label-mono-sm text-label-mono-sm font-bold w-fit">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>MODULE 04 • PHYSICAL + DIGITAL STUDY ASSETS</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-brand-navy">
+            Smart Tute Dispatch &amp; Vector Mindmaps
+          </h3>
+<p class="font-body-md text-body-md text-text-secondary">
+            The perfect harmony of tactile paper and crisp digital summaries. We don't just post PDF scans; every student receives full-color monthly printed theory books and vector model paper booklets delivered directly to their home address.
+          </p>
+<div class="flex flex-col gap-2.5 mt-space-xs font-body-sm text-body-sm text-on-surface">
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[20px] mt-0.5">verified_user</span>
+<div>
+<strong class="text-brand-navy">Doorstep Courier Delivery:</strong> Printed theory and revision booklets dispatched via tracked courier to any district in Sri Lanka before the 1st of every month.
+              </div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">download</span>
+<div>
+<strong class="text-brand-navy">Searchable PDF Vault:</strong> Instant digital backups available on the LMS with step-by-step marking rubrics matching Government Examination Department standards.
+              </div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">schema</span>
+<div>
+<strong class="text-brand-navy">Visual Chemistry &amp; Physics Mindmaps:</strong> Single-page visual summaries summarizing entire 50-page chapters for effortless last-minute memory recall.
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Technical Infrastructure & Connectivity Assurance -->
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter py-space-3xl w-full">
+<div class="p-space-lg lg:p-space-2xl rounded-3xl bg-surface-white shadow-md flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-whatsapp-emerald font-bold">BUILT FOR SRI LANKAN CONNECTIVITY</span>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy mt-1">
+            Engineered for Low-Data &amp; Unstable Connections
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary max-w-md">
+          Tested and optimized to stream effortlessly on Dialog 4G, Mobitel, SLT Fibre, and Airtel routers without burning unnecessary data quotas.
+        </p>
+</div>
+<!-- Bento Grid: 3 Pillars of Technical Excellence -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">network_cell</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy">Dynamic Bitrate Streaming</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            The video automatically adjusts between 1080p, 720p, and 480p depending on your signal strength, ensuring you hear every word without buffering even during bad weather.
+          </p>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold mt-auto">∼350MB data consumed per 2h class</span>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">devices</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy">Mobile-First PWA Responsive</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            No expensive laptop required. The LMS interface runs seamlessly on budget Android phones, iPhones, iPads, and Windows computers without installing heavy software.
+          </p>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold mt-auto">PWA installable in 5 seconds</span>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-whatsapp-emerald text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">offline_pin</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-brand-navy">Encrypted Offline Paper Mode</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Download model papers and answer schemes while connected to Wi-Fi. Access them offline during power outages and submit answers whenever your connection resumes.
+          </p>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary font-bold mt-auto">Zero internet needed for review</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Quick Comparison Table: Traditional Tuition vs. SipNetha LMS -->
+<div class="w-full bg-surface-container-low py-space-3xl">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter flex flex-col gap-space-xl">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-2">
+<span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider text-secondary font-bold">WHY CHOOSE OUR VIRTUAL ECOSYSTEM</span>
+<h2 class="font-headline-lg text-headline-lg text-brand-navy">
+          Traditional Mass Classes vs. SipNetha LMS
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary">
+          Compare how our deliberate digital architecture helps your child achieve distinction in Science and Maths with lower stress and higher accountability.
+        </p>
+</div>
+<!-- High Contrast Comparison Matrix -->
+<div class="overflow-x-auto rounded-3xl shadow-md bg-surface-white">
+<table class="w-full text-left border-collapse min-w-[640px]">
+<thead>
+<tr class="bg-surface-container-high/70">
+<th class="p-space-md font-headline-sm text-headline-sm text-brand-navy w-2/5">Feature / Dimension</th>
+<th class="p-space-md font-headline-sm text-headline-sm text-text-secondary w-3/10">Conventional Hall Class</th>
+<th class="p-space-md font-headline-sm text-headline-sm text-primary w-3/10 bg-primary/5">SipNetha LMS</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md font-semibold text-on-surface">Missed Class Policy</td>
+<td class="p-space-md text-text-secondary">Lost forever; borrow handwritten notes from peers</td>
+<td class="p-space-md font-semibold text-whatsapp-emerald bg-primary/5">24/7 HD Recording available until final O/L exam</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md font-semibold text-on-surface">Travel &amp; Commute Time</td>
+<td class="p-space-md text-text-secondary">2 to 4 hours wasted in bus queues and traffic jams</td>
+<td class="p-space-md font-semibold text-whatsapp-emerald bg-primary/5">0 hours; learn safely from the home desk</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md font-semibold text-on-surface">Clearing Personal Doubts</td>
+<td class="p-space-md text-text-secondary">Impossible in halls of 500+ students</td>
+<td class="p-space-md font-semibold text-whatsapp-emerald bg-primary/5">Direct WhatsApp Teacher Desk + in-class mic hand-raises</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md font-semibold text-on-surface">Tute &amp; Paper Material</td>
+<td class="p-space-md text-text-secondary">Black-and-white photocopies collected in physical line</td>
+<td class="p-space-md font-semibold text-whatsapp-emerald bg-primary/5">Color printed tutes courier-delivered + vector PDFs</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md font-semibold text-on-surface">Syllabus Completion Deadline</td>
+<td class="p-space-md text-text-secondary">Often dragged until 2 weeks before the exam</td>
+<td class="p-space-md font-semibold text-whatsapp-emerald bg-primary/5">Guaranteed 3 full months prior for intensive revision</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md font-semibold text-on-surface">Parental Visibility &amp; Attendance</td>
+<td class="p-space-md text-text-secondary">No automated tracking; parents remain unaware</td>
+<td class="p-space-md font-semibold text-whatsapp-emerald bg-primary/5">Automated SMS attendance + monthly marks report card</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Section 5: Student Login Modal Preview & CTA Bar -->
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter py-space-3xl w-full">
+<div class="rounded-3xl bg-brand-navy text-on-primary p-space-lg lg:p-space-2xl relative overflow-hidden shadow-xl">
+<!-- Decorative Backdrop Geometry -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/20 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-primary-container/30 blur-2xl pointer-events-none"></div>
+<div class="relative grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Text Left -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-secondary-fixed font-label-mono-sm text-label-mono-sm font-semibold w-fit">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>ENROLMENTS OPEN • TERM 2025 BATCHES</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary">
+            Ready to Experience the Smartest Science &amp; Maths Tuition?
+          </h2>
+<p class="font-body-md text-body-md text-surface-container-highest max-w-xl">
+            Join over 1,500 students across Colombo, Kandy, Galle, Gampaha, Kurunegala, and Jaffna. Gain instant access to live Zoom feeds, lecture archives, and paper marking keys.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center gap-2 px-space-lg py-3.5 rounded-full bg-whatsapp-emerald text-on-primary font-body-sm text-body-sm font-bold shadow-md hover:bg-emerald-600 transition-all active:scale-[0.98]" href="https://wa.me/94771234567?text=Hello%20Sir%20Chamodya,%20I%20would%20like%20to%20register%20for%20the%20LMS%20Classes" target="_blank">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span>Register New Student via WhatsApp</span>
+</a>
+<a class="inline-flex items-center gap-2 px-space-lg py-3.5 rounded-full bg-surface-white text-brand-navy font-body-sm text-body-sm font-bold shadow-md hover:bg-surface-container-low transition-all" data-path="student-lms-portal" href="login.html">
+<span class="material-symbols-outlined text-[20px]">lock_open</span>
+<span>Open Student Login</span>
+</a>
+</div>
+</div>
+<!-- Mini Interactive Portal Login Card -->
+<div class="lg:col-span-5">
+<div class="p-space-lg rounded-2xl bg-surface-white text-on-surface shadow-2xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">badge</span>
+<span class="font-headline-sm text-headline-sm text-brand-navy">Student LMS Portal</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-whatsapp-emerald font-semibold">SSL Secured</span>
+</div>
+<p class="font-caption text-caption text-text-secondary">
+              Enter your SipNetha Academy Registration Number and Password to access your active class schedule.
+            </p>
+<!-- Interactive Form Simulation -->
+<form class="flex flex-col gap-3 mt-1" id="lms-quick-form" onsubmit="event.preventDefault(); document.getElementById('login-feedback').classList.remove('hidden');setTimeout(function(){location.href='dashboard.html'},900);">
+<div class="flex flex-col gap-1">
+<label class="font-label-mono-sm text-label-mono-sm text-text-secondary font-semibold" for="student-id">STUDENT ID / REG NO.</label>
+<div class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-low border border-border-subtle focus-within:ring-2 focus-within:ring-primary">
+<span class="material-symbols-outlined text-text-secondary text-[18px]">person</span>
+<input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" id="student-id" placeholder="e.g. CA-2025-8842" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-mono-sm text-label-mono-sm text-text-secondary font-semibold" for="student-pass">ACCESS PIN</label>
+<div class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-low border border-border-subtle focus-within:ring-2 focus-within:ring-primary">
+<span class="material-symbols-outlined text-text-secondary text-[18px]">key</span>
+<input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" id="student-pass" placeholder="••••••" required="" type="password"/>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-body-sm text-body-sm font-semibold shadow-sm transition-all flex items-center justify-center gap-2 mt-1" type="submit">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<span>Enter My Classroom</span>
+</button>
+</form>
+<!-- Feedback Message -->
+<div class="hidden p-3 rounded-xl bg-whatsapp-emerald/10 text-whatsapp-emerald font-body-sm text-body-sm flex items-center gap-2" id="login-feedback">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Redirecting to your student dashboard...</span>
+</div>
+<div class="flex items-center justify-between pt-2 text-caption font-caption text-text-secondary">
+<a class="hover:text-primary transition-colors" href="https://wa.me/94771234567" target="_blank">Forgot Student ID?</a>
+<a class="hover:text-primary transition-colors" data-path="class-timetable" href="timetable.html">Check Timetable</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('lms-quick-form');
+      const feedback = document.getElementById('login-feedback');
+      if (form && feedback) {
+        form.addEventListener('submit', () => {
+          setTimeout(() => {
+            const portalLink = document.querySelector('[data-path="student-lms-portal"]');
+            if (portalLink) {
+              portalLink.scrollIntoView({ behavior: 'smooth' });
+            }
+          }, 1200);
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-white mt-space-3xl"><div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-4 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">school</span></div><span class="font-headline-sm text-headline-sm text-brand-navy">SipNetha Academy</span></div><p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">Sri Lanka\'s authoritative online tuition powerhouse for Grades 6–11. Combining live high-definition Zoom masterclasses, gamified paper evaluations, and automated parent progress tracking.</p><div class="flex items-center gap-space-xs mt-space-xs"><span class="material-symbols-outlined text-live-coral text-[20px]">emergency_home</span><span class="font-label-mono-md text-label-mono-md text-on-surface font-semibold">Direct Academic Hotline:</span><span class="font-label-mono-md text-label-mono-md text-primary font-bold">+94 11 289 4000</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">National Syllabus</h4><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-text-secondary"><li>• Grades 6 to 9 Foundation Sciences &amp; Mathematics</li><li>• Grade 10 O/L Acceleration Track</li><li>• Grade 11 O/L Intensive Revision &amp; Paper Class</li><li>• Sinhala Medium &amp; English Medium Parallel Batches</li><li>• Provincial Exam &amp; Model Paper Dissections</li></ul></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">WhatsApp Batch Desks</h4><p class="font-caption text-caption text-text-secondary">Instant class links, zoom passes, and homework alerts:</p><div class="flex flex-wrap gap-2"><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%206%20Desk" target="_blank">Grade 6 Desk</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%207%20Desk" target="_blank">Grade 7 Desk</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%208%20Desk" target="_blank">Grade 8 Desk</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%209%20Desk" target="_blank">Grade 9 Desk</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%2010%20O/L" target="_blank">Grade 10 O/L</a><a class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-whatsapp-emerald hover:text-on-primary text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20Grade%2011%20Master%20Batch" target="_blank">Grade 11 Master Batch</a></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Student LMS</h4><div class="flex flex-col gap-2 font-body-sm text-body-sm"><a class="text-primary hover:text-primary-container font-semibold transition-colors flex items-center gap-1.5" data-path="student-portal" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20lock_open%20%20Access%20Portal" target="_blank"><span class="material-symbols-outlined text-[16px]">lock_open</span><span>Access Portal</span></a><a class="text-text-secondary hover:text-on-surface transition-colors flex items-center gap-1.5" data-path="class-timetable" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20schedule%20%20Term%20Schedule" target="_blank"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Term Schedule</span></a><a class="text-text-secondary hover:text-on-surface transition-colors flex items-center gap-1.5" data-path="lms-features" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20cloud_download%20%20Lecture%20Recordings" target="_blank"><span class="material-symbols-outlined text-[16px]">cloud_download</span><span>Lecture Recordings</span></a><a class="text-text-secondary hover:text-on-surface transition-colors flex items-center gap-1.5" data-path="meet-teacher" href="https://wa.me/94771234567?text=Hello,%20I%20need%20help%20with%20verified%20%20Academic%20Staff" target="_blank"><span class="material-symbols-outlined text-[16px]">verified</span><span>Academic Staff</span></a></div></div></div><div class="mt-space-xl pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-caption text-caption text-text-secondary"><p>© 2025 SipNetha Academy Sri Lanka. Registered Educational Organization. All Rights Reserved.</p><div class="flex items-center gap-space-md"><span class="font-label-mono-sm text-label-mono-sm text-secondary font-semibold">National Curriculum Certified</span><span>•</span><span class="font-label-mono-sm text-label-mono-sm text-text-secondary">Sinhala &amp; English Medium</span></div></div></div></footer>
+<script src="js/site.js"></script></body></html>
