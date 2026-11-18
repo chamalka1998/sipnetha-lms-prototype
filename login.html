@@ -1,226 +1,162 @@
-<!DOCTYPE html><html lang="en"><head><title>Student Login | SipNetha Academy</title><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_blank" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=block" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-container":"#1e40af","primary":"#00288e","surface-tint":"#3755c3","on-tertiary-container":"#a7b9ff","secondary-fixed":"#89f5e7","secondary":"#006a61","error":"#ba1a1a","tertiary-fixed-dim":"#b6c4ff","tertiary":"#0d2e7e","on-primary":"#ffffff","border-subtle":"#E2E8F0","on-secondary-fixed":"#00201d","primary-fixed-dim":"#b8c4ff","secondary-fixed-dim":"#6bd8cb","surface-variant":"#dae2fd","on-secondary-container":"#006f66","surface-container-high":"#e2e7ff","on-surface":"#131b2e","on-surface-variant":"#444653","surface-bright":"#faf8ff","error-container":"#ffdad6","on-error-container":"#93000a","live-coral":"#EF4444","background":"#faf8ff","inverse-primary":"#b8c4ff","surface-container-low":"#f2f3ff","secondary-container":"#86f2e4","on-primary-fixed-variant":"#173bab","surface":"#faf8ff","primary-fixed":"#dde1ff","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#005049","on-tertiary":"#ffffff","on-secondary":"#ffffff","brand-navy":"#1E3A8A","on-background":"#131b2e","outline-variant":"#c4c5d5","surface-container":"#eaedff","whatsapp-emerald":"#16A34A","surface-container-highest":"#dae2fd","on-error":"#ffffff","on-tertiary-fixed-variant":"#264191","tertiary-fixed":"#dce1ff","on-primary-fixed":"#001453","on-tertiary-fixed":"#00164e","inverse-on-surface":"#eef0ff","inverse-surface":"#283044","surface-white":"#FFFFFF","canvas-bg":"#F8FAFC","outline":"#757684","surface-dim":"#d2d9f4","tertiary-container":"#2c4696","text-secondary":"#475569","on-primary-container":"#a8b8ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"4rem","gutter":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2.5rem","gutter-mobile":"1rem","space-md":"1rem","space-3xl":"6rem","margin":"2rem","space-lg":"1.5rem","margin-mobile":"1rem"},"fontFamily":{"caption":["Inter"],"headline-sm":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-mono-md":["JetBrains Mono"],"label-mono-sm":["JetBrains Mono"],"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"]},"fontSize":{"caption":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-mono-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"label-mono-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}]}}}}</script><link rel="stylesheet" href="css/fixes.css"></head><body class="bg-canvas-bg font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-center items-center p-space-md"><main class="w-full max-w-5xl py-6"><div class="flex flex-col w-full">
-<div class="w-full bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden flex flex-col lg:flex-row min-h-[640px]">
-<!-- Left Hero & Academy Status Panel -->
-<div class="w-full lg:w-5/12 bg-primary text-on-primary p-space-lg lg:p-space-xl flex flex-col justify-between relative overflow-hidden">
-<!-- Ambient Glow Overlays -->
-<div class="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-surface-tint opacity-30 blur-3xl pointer-events-none"></div>
-<div class="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-secondary opacity-25 blur-3xl pointer-events-none"></div>
-<!-- Top Branding Section -->
-<div class="relative z-10 space-y-space-md">
+<!DOCTYPE html><html lang="en"><head><title>Student LMS Login | Chamodya Tuition Academy</title><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_blank" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#173bab","on-tertiary-container":"#a7b9ff","surface-container":"#eaedff","on-secondary-fixed-variant":"#005049","surface-bright":"#faf8ff","whatsapp-emerald":"#16A34A","secondary-fixed-dim":"#6bd8cb","tertiary":"#0d2e7e","surface-container-high":"#e2e7ff","surface-tint":"#3755c3","on-tertiary":"#ffffff","outline-variant":"#c4c5d5","on-tertiary-fixed-variant":"#264191","on-primary-fixed":"#001453","brand-navy":"#1E3A8A","surface-container-low":"#f2f3ff","inverse-primary":"#b8c4ff","on-background":"#131b2e","on-surface":"#131b2e","surface-dim":"#d2d9f4","primary-fixed-dim":"#b8c4ff","on-primary-container":"#a8b8ff","canvas-bg":"#F8FAFC","secondary":"#006a61","on-error-container":"#93000a","error":"#ba1a1a","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","live-coral":"#EF4444","on-secondary":"#ffffff","tertiary-container":"#2c4696","on-secondary-container":"#006f66","surface-container-highest":"#dae2fd","border-subtle":"#E2E8F0","surface":"#faf8ff","text-secondary":"#475569","outline":"#757684","on-tertiary-fixed":"#00164e","background":"#faf8ff","error-container":"#ffdad6","on-secondary-fixed":"#00201d","surface-white":"#FFFFFF","surface-container-lowest":"#ffffff","on-surface-variant":"#444653","primary-container":"#1e40af","primary":"#00288e","tertiary-fixed-dim":"#b6c4ff","primary-fixed":"#dde1ff","secondary-container":"#86f2e4","on-primary":"#ffffff","secondary-fixed":"#89f5e7","tertiary-fixed":"#dce1ff","inverse-surface":"#283044","on-error":"#ffffff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem","space-3xl":"6rem","margin-mobile":"1rem",gutter:"1.5rem","space-xl":"2.5rem","space-xs":"0.25rem","space-2xl":"4rem",margin:"2rem","space-md":"1rem","gutter-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"label-mono-sm":["JetBrains Mono"],caption:["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"label-mono-md":["JetBrains Mono"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-sm":["Inter"]},fontSize:{"label-mono-sm":["11px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],caption:["12px",{lineHeight:"16px",fontWeight:"500"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-md":["16px",{lineHeight:"26px",fontWeight:"400"}],"label-mono-md":["13px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"500"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"body-sm":["14px",{lineHeight:"22px",fontWeight:"400"}]}}}}</script><link rel="stylesheet" href="css/fixes.css"><link rel="stylesheet" href="css/animations.css"></head><body data-kind="login" class="bg-canvas-bg font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="w-full py-space-md"><div class="max-w-7xl mx-auto px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[22px]">school</span></div><span class="font-headline-sm text-headline-sm text-brand-navy">Chamodya LMS</span></div><div class="flex items-center gap-2 px-space-md py-1 rounded-full bg-surface-white shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-secondary text-[16px]">lock</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant font-medium">256-Bit SSL Secure Portal</span></div></div></header><main class="w-full flex-1 flex items-center justify-center px-space-md py-space-xl"><div class="flex flex-col w-full max-w-4xl mx-auto">
+<div class="relative w-full rounded-3xl bg-surface-white shadow-xl overflow-hidden p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-16 h-16 rounded-2xl overflow-hidden shadow-md flex-shrink-0 bg-surface-container">
+<img loading="lazy" class="w-full h-full object-cover" data-alt="Warm smiling Sri Lankan female educator Chamodya Aluthwathegedara dressed professionally in modest smart traditional attire with soft natural daylight and library bookshelf background in soft focus" src="assets/img/teacher-2.jpg">
+<div class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-whatsapp-emerald ring-2 ring-surface-white"></div>
+</div>
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary font-semibold tracking-wider uppercase block">Teacher Chamodya Aluthwathegedara</span>
+<h1 class="font-headline-md text-headline-md text-brand-navy">Student LMS Login</h1>
+<p class="font-body-sm text-body-sm text-text-secondary">ශිෂ්‍ය පිවිසුම • Sinhala, Buddhism &amp; Geography</p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-space-md py-1.5 rounded-full">
+<span class="w-2.5 h-2.5 rounded-full bg-live-coral animate-ping"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-brand-navy font-semibold">2025 ACADEMIC YEAR</span>
+</div>
+</div>
+
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); handleLogin();">
+<div class="flex flex-col gap-1.5">
+<label class="font-body-md text-body-md font-semibold text-brand-navy flex items-center justify-between" for="admissionInput">
+<span>Student Index or WhatsApp Number</span>
+<span class="font-caption text-caption text-text-secondary">ඇතුලත් වීමේ අංකය හෝ දුරකථන අංකය</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-text-secondary text-[22px] pointer-events-none">badge</span>
+<input class="w-full pl-12 pr-4 py-3.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-white transition-all placeholder:text-text-secondary/50 placeholder:font-caption" id="admissionInput" placeholder="e.g. CA-2025-G10-0428 or 077 123 4567" ="" type="text">
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
 <div class="flex items-center justify-between">
-<div class="flex items-center gap-space-sm">
-<div class="w-10 h-10 rounded-xl bg-surface-white/10 backdrop-blur-md flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-secondary-fixed text-2xl">school</span>
-</div>
-<div>
-<div class="flex items-center gap-1.5">
-<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-primary">SipNetha</span>
-<span class="text-caption font-caption bg-secondary/30 text-secondary-fixed px-2 py-0.5 rounded-full">Student LMS</span>
-</div>
-<p class="font-caption text-caption text-surface-variant/80">National Curriculum Grades 6–11 O/L</p>
-</div>
-</div>
-</div>
-<!-- Greeting Block -->
-<div class="pt-space-md">
-<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-white/10 backdrop-blur-md text-secondary-fixed font-label-mono-sm text-label-mono-sm uppercase tracking-wide">
-<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
-            Academic Year 2026
-          </span>
-<h1 class="font-headline-lg text-headline-lg text-on-primary mt-2">
-            Welcome Back, Scholar! 👋
-          </h1>
-<p class="font-body-sm text-body-sm text-surface-variant/90 mt-1 max-w-sm">
-            Log in to stream your HD live Zoom sessions, download Sinhala &amp; English medium tutes, and track your term test performance.
-          </p>
-</div>
-<!-- Live Class Status Banner -->
-<div class="bg-surface-white/10 backdrop-blur-md rounded-xl p-space-md shadow-sm space-y-2 mt-4">
-<div class="flex items-center justify-between">
-<span class="inline-flex items-center gap-1.5 text-error-container font-label-mono-sm text-label-mono-sm font-bold">
-<span class="w-2 h-2 rounded-full bg-live-coral"></span>
-              NEXT LIVE BROADCAST
-            </span>
-<span class="font-label-mono-sm text-label-mono-sm text-surface-variant/80">Room #Zoom-04</span>
-</div>
-<div class="flex items-center justify-between">
-<div>
-<div class="font-headline-sm text-headline-sm text-on-primary leading-tight">Grade 10 Mathematics</div>
-<div class="font-caption text-caption text-surface-variant">Quadratic Equations &amp; Geometry Revision</div>
-</div>
-<div class="bg-surface-white/15 px-3 py-1.5 rounded-lg text-center">
-<div class="font-label-mono-md text-label-mono-md font-bold text-secondary-fixed">04:30&nbsp;PM</div>
-<div class="font-caption text-[10px] text-surface-variant uppercase tracking-wider">Today</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Bottom Support Card & Educator Anchor -->
-<div class="relative z-10 pt-space-lg space-y-space-sm mt-auto">
-<div class="bg-surface-white/10 backdrop-blur-md rounded-xl p-3 flex items-center gap-space-sm">
-<div class="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container relative">
-<img loading="lazy" class="w-full h-full object-cover" data-alt="Portrait of Teacher Chamodya Aluthwathegedara" src="assets/img/teacher-1.jpg">
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center gap-1">
-<span class="font-headline-sm text-sm text-on-primary font-bold truncate">Teacher Chamodya Aluthwathegedara</span>
-<span class="material-symbols-outlined text-secondary-fixed text-base">verified</span>
-</div>
-<p class="font-caption text-caption text-surface-variant truncate">Master Educator • Senior O/L Coordinator</p>
-<p class="font-label-mono-sm text-[10px] text-secondary-fixed mt-0.5">Teacher Chamodya Available 24/7</p>
-</div>
-</div>
-<!-- Motivational Quote -->
-<p class="font-caption text-[11px] text-surface-variant/80 italic text-center">
-          “Hard work today turns ordinary students into national rankers tomorrow.”
-        </p>
-</div>
-</div>
-<!-- Right LMS Login Form Panel -->
-<div class="w-full lg:w-7/12 bg-surface-white p-space-lg lg:p-space-xl flex flex-col justify-between">
-<div>
-<!-- Card Header with Breadcrumb-Style Meta -->
-<div class="flex items-center justify-between pb-space-sm">
-<div>
-<span class="font-label-mono-sm text-label-mono-sm text-secondary font-semibold uppercase tracking-wider">Student Secure Portal</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">LMS Student Authentication</h2>
-</div>
-<a class="inline-flex items-center gap-1 font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="index.html">
-<span class="material-symbols-outlined text-base">arrow_back</span>
-<span>Home</span>
-</a>
-</div>
-<p class="font-body-sm text-body-sm text-text-secondary mb-space-md">
-          Enter your student admission credentials issued during registration to access your grade dashboard.
-        </p>
-<!-- Main Form -->
-<form class="space-y-space-md" id="loginForm" onsubmit="event.preventDefault();location.href='dashboard.html';">
-<!-- Grade Level Selector Pills -->
-<div>
-<label class="block font-headline-sm text-sm text-on-surface mb-2 font-medium">Select Your Grade / Year</label>
-<div class="grid grid-cols-3 sm:grid-cols-6 gap-2" id="gradePillGroup">
-<button class="grade-pill py-2 text-center rounded-lg bg-surface-container text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all hover:bg-surface-variant focus:outline-none" data-grade="6" type="button">Gr 06</button>
-<button class="grade-pill py-2 text-center rounded-lg bg-surface-container text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all hover:bg-surface-variant focus:outline-none" data-grade="7" type="button">Gr 07</button>
-<button class="grade-pill py-2 text-center rounded-lg bg-surface-container text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all hover:bg-surface-variant focus:outline-none" data-grade="8" type="button">Gr 08</button>
-<button class="grade-pill py-2 text-center rounded-lg bg-surface-container text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all hover:bg-surface-variant focus:outline-none" data-grade="9" type="button">Gr 09</button>
-<button class="grade-pill py-2 text-center rounded-lg bg-primary text-on-primary shadow-sm font-label-mono-sm text-label-mono-sm font-semibold transition-all focus:outline-none" data-grade="10" type="button">Gr 10</button>
-<button class="grade-pill py-2 text-center rounded-lg bg-surface-container text-on-surface font-label-mono-sm text-label-mono-sm font-semibold transition-all hover:bg-surface-variant focus:outline-none" data-grade="11" type="button">Gr 11 O/L</button>
-</div>
-</div>
-<!-- Student ID / Index No Input -->
-<div>
-<div class="flex items-center justify-between mb-1">
-<label class="block font-headline-sm text-sm text-on-surface font-medium" for="studentId">
-                Student ID / Index No.
-              </label>
-<span class="font-caption text-caption text-text-secondary">E.g., LS-2025-G10-0428</span>
+<label class="font-body-md text-body-md font-semibold text-brand-navy flex items-center gap-2" for="pinInput">
+<span>4-Digit Security PIN / Password</span>
+<span class="font-caption text-caption text-text-secondary">(රහස් අංකය)</span>
+</label>
+<span class="font-caption text-caption text-secondary font-medium">Default: Year of birth e.g. 2010</span>
 </div>
 <div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-3.5 text-text-secondary text-xl pointer-events-none">badge</span>
-<input class="w-full bg-surface-container-low text-on-surface font-label-mono-md text-label-mono-md pl-11 pr-4 py-3 rounded-xl focus:bg-surface-white focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all" id="studentId" name="studentId" placeholder="LS-2025-G10-0428" required="" type="text">
-</div>
-</div>
-<!-- Secret Password / Access Pin -->
-<div>
-<div class="flex items-center justify-between mb-1">
-<label class="block font-headline-sm text-sm text-on-surface font-medium" for="password">
-                Secret Access Key / Password
-              </label>
-<a class="font-caption text-caption text-primary hover:underline" target="_blank" href="https://wa.me/94771234567?text=Hello%20Teacher,%20I%20forgot%20my%20student%20portal%20password">Forgot Access Code?</a>
-</div>
-<div class="relative flex items-center">
-<span class="material-symbols-outlined absolute left-3.5 text-text-secondary text-xl pointer-events-none">lock</span>
-<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-11 pr-11 py-3 rounded-xl focus:bg-surface-white focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all" id="password" name="password" placeholder="••••••••••••" required="" type="password">
-<button aria-label="Toggle password visibility" class="absolute right-3.5 text-text-secondary hover:text-on-surface focus:outline-none flex items-center justify-center p-1 rounded" id="togglePassword" type="button">
-<span class="material-symbols-outlined text-xl" id="toggleIcon">visibility</span>
+<span class="material-symbols-outlined absolute left-4 text-text-secondary text-[22px] pointer-events-none">lock</span>
+<input class="w-full pl-12 pr-12 py-3.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md tracking-wider shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-white transition-all placeholder:tracking-normal placeholder:text-text-secondary/50 placeholder:font-caption" id="pinInput" maxlength="8" placeholder="Enter your confidential PIN" ="" type="password">
+<button aria-label="Toggle password visibility" class="absolute right-4 text-text-secondary hover:text-brand-navy transition-colors focus:outline-none" onclick="togglePinVisibility()" type="button">
+<span class="material-symbols-outlined text-[22px]" id="eyeIcon">visibility</span>
 </button>
 </div>
 </div>
-<!-- Medium & Remember Device Option Row -->
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-1">
-<label class="flex items-center gap-2 cursor-pointer select-none">
-<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" id="rememberMe" type="checkbox">
-<span class="font-body-sm text-body-sm text-text-secondary">Keep this student device logged in</span>
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary bg-surface-container" type="checkbox">
+<span class="font-body-sm text-body-sm text-text-secondary">Keep me signed in on this device</span>
 </label>
-<div class="flex items-center gap-1.5 self-start sm:self-auto">
-<span class="font-caption text-[11px] uppercase tracking-wider text-text-secondary font-semibold">Medium:</span>
-<span class="bg-surface-container text-on-surface font-caption text-caption px-2 py-0.5 rounded-full font-medium">Sinhala &amp; English</span>
+<a class="font-caption text-caption text-primary hover:underline font-semibold" href="#help" onclick="fillHelpPrompt()">Forgot PIN? (PIN අමතකද?)</a>
 </div>
-</div>
-<!-- Submit Button -->
-<button class="w-full relative group overflow-hidden bg-primary-container text-on-primary py-3.5 px-6 rounded-full font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 shadow-md hover:shadow-lg active:scale-[0.99] transition-all" type="submit">
-<span class="relative z-10 flex items-center gap-2">
-<span>Sign In to Student Dashboard</span>
-<span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">rocket_launch</span>
-</span>
-<div class="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<button class="w-full py-4 px-space-lg rounded-2xl bg-gradient-to-r from-primary to-secondary text-on-primary font-headline-sm text-headline-sm font-bold shadow-lg hover:shadow-xl hover:opacity-95 transform active:scale-[0.99] transition-all flex items-center justify-center gap-space-sm mt-2" id="loginSubmitBtn" type="submit">
+<span>Sign In to My Classes</span>
+<span class="font-body-md text-body-md font-medium opacity-90">(පන්තියට ඇතුල් වන්න)</span>
+<span class="material-symbols-outlined text-[24px]">arrow_forward</span>
 </button>
 </form>
-<!-- Alternative Access / Parent Info -->
-<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm bg-surface-container-low rounded-xl p-3">
-<div class="flex items-center gap-2.5">
-<div class="w-8 h-8 rounded-full bg-whatsapp-emerald/10 text-whatsapp-emerald flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-lg">chat</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-2">
+<div class="p-space-md rounded-2xl bg-secondary-container/30 flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-white shadow-sm flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">video_camera_front</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-live-coral text-on-error font-label-mono-sm text-label-mono-sm font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-error animate-ping"></span> Live Today
+            </span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary">4:00 PM</span>
+</div>
+<p class="font-body-sm text-body-sm font-semibold text-brand-navy truncate mt-1">Grade 10 Sinhala Language &amp; Lit</p>
+<p class="font-caption text-caption text-text-secondary">Zoom meeting unlocks upon sign in</p>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-whatsapp-emerald/10 text-whatsapp-emerald flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">forum</span>
 </div>
 <div>
-<p class="font-headline-sm text-xs font-semibold text-on-surface">New Admission or Need Login Help?</p>
-<p class="font-caption text-[11px] text-text-secondary">Contact Academy Hotline: +94 77 123 4567</p>
+<p class="font-body-sm text-body-sm font-semibold text-brand-navy">Parent Helpdesk (උදව්)</p>
+<p class="font-caption text-caption text-text-secondary">Fast WhatsApp connection for parents</p>
 </div>
 </div>
-<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-full bg-whatsapp-emerald/15 hover:bg-whatsapp-emerald text-whatsapp-emerald hover:text-white font-caption text-caption font-semibold transition-all" href="https://wa.me/94771234567?text=Hello%20Teacher,%20I%20need%20assistance%20logging%20into%20my%20LMS%20Student%20Portal" rel="noopener noreferrer" target="_blank">
-<span>WhatsApp Admin</span>
-<span class="material-symbols-outlined text-sm">open_in_new</span>
+<a class="px-space-md py-2 rounded-xl bg-whatsapp-emerald text-on-primary font-caption text-caption font-semibold shadow hover:opacity-90 transition-all flex items-center gap-1 flex-shrink-0" href="https://wa.me/94770000000?text=Hello%20Teacher%20Chamodya,%20I%20need%20help%20with%20my%20child's%20LMS%20login." rel="noopener noreferrer" target="_blank">
+<span>Chat</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
 </a>
 </div>
 </div>
-<!-- Footer Reassurance & Security Badge -->
-<div class="mt-space-lg pt-space-sm flex flex-col sm:flex-row items-center justify-between text-text-secondary gap-2">
-<div class="flex items-center gap-1.5 font-caption text-[11px]">
-<span class="material-symbols-outlined text-secondary text-sm">lock</span>
-<span>End-to-End Encrypted Session</span>
-<span class="text-surface-variant">•</span>
-<span>Zero Recorded Fraud Check</span>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl flex flex-wrap items-center justify-around gap-4 text-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[20px]">check_circle</span>
+<span class="font-caption text-caption text-brand-navy font-semibold">Sinhala Literature</span>
 </div>
-<div class="font-label-mono-sm text-[11px] text-text-secondary">
-          v4.8.2 SipNetha Engine
-        </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[20px]">check_circle</span>
+<span class="font-caption text-caption text-brand-navy font-semibold">Buddhism &amp; Dhamma</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-whatsapp-emerald text-[20px]">check_circle</span>
+<span class="font-caption text-caption text-brand-navy font-semibold">Sri Lankan &amp; World Geography</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">play_circle</span>
+<span class="font-caption text-caption text-text-secondary">HD Lesson Recordings</span>
 </div>
 </div>
 </div>
 </div>
 <script>
-  // Password Visibility Toggle
-  const toggleBtn = document.getElementById('togglePassword');
-  const passwordInput = document.getElementById('password');
-  const toggleIcon = document.getElementById('toggleIcon');
+  let currentSelectedGrade = 10;
 
-  if (toggleBtn && passwordInput && toggleIcon) {
-    toggleBtn.addEventListener('click', () => {
-      const isPassword = passwordInput.getAttribute('type') === 'password';
-      passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
-      toggleIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
+  function selectGrade(grade, element) {
+    currentSelectedGrade = grade;
+    const label = document.getElementById('selectedGradeLabel');
+    if (label) {
+      label.textContent = 'Grade ' + grade + ' Active';
+    }
+
+    const buttons = document.querySelectorAll('.grade-btn');
+    buttons.forEach(btn => {
+      btn.className = 'grade-btn py-2.5 px-3 rounded-xl font-label-mono-md text-label-mono-md font-semibold text-center transition-all bg-surface-white text-on-surface shadow-sm hover:shadow';
     });
+
+    element.className = 'grade-btn py-2.5 px-3 rounded-xl font-label-mono-md text-label-mono-md font-semibold text-center transition-all bg-primary-container text-on-primary shadow-md transform -translate-y-0.5';
   }
 
-  // Grade Selector Interaction
-  const gradePills = document.querySelectorAll('.grade-pill');
-  gradePills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      gradePills.forEach(p => {
-        p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
-        p.classList.add('bg-surface-container', 'text-on-surface');
-      });
-      pill.classList.remove('bg-surface-container', 'text-on-surface');
-      pill.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
-      
-      const grade = pill.getAttribute('data-grade');
-      const studentIdInput = document.getElementById('studentId');
-      if (studentIdInput && !studentIdInput.value) {
-        studentIdInput.placeholder = `LS-2025-G${grade}-0428`;
-      }
-    });
-  });
-</script></main>
+  function togglePinVisibility() {
+    const input = document.getElementById('pinInput');
+    const icon = document.getElementById('eyeIcon');
+    if (!input || !icon) return;
 
-<script src="js/site.js"></script></body></html>
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      input.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  }
+
+  function fillHelpPrompt() {
+    const adm = document.getElementById('admissionInput');
+    if (adm) {
+      adm.focus();
+    }
+    alert('Please enter your WhatsApp contact number or call academy helpdesk at +94 77 000 0000 for instant PIN recovery.');
+  }
+
+  function handleLogin() {
+    var btn = document.getElementById('loginSubmitBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[24px]">progress_activity</span><span>Opening your LMS...</span>';
+    setTimeout(function () { window.location.href = 'classes.html'; }, 900);
+  }
+</script></main><footer class="w-full py-space-md"><div class="max-w-7xl mx-auto px-space-lg text-center"><p class="font-caption text-caption text-text-secondary">© 2026 Chamodya Tuition Academy. Sinhala, Buddhism &amp; Geography Specialist (Grades 6–11). All rights reserved.</p></div></footer>
+
+<script src="js/site.js"></script><script src="js/animations.js"></script></body></html>

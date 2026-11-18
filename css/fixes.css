@@ -1,47 +1,87 @@
-/* Fixes added on top of the exported designs */
-html { scroll-behavior: smooth; scroll-padding-top: 6.5rem; }
-body { overflow-x: hidden; }
+/* Fixes on top of the exported designs */
+html { scroll-behavior: smooth; scroll-padding-top: 6.5rem; overflow-x: clip; }
+body { overflow-x: clip; }
 img { max-width: 100%; }
+.truncate { min-width: 0; }
+h1, h2, h3 { overflow-wrap: anywhere; }
 
-/* Icon names (like "school") must never show as words if the icon font is slow */
-.material-symbols-outlined {
-  display: inline-block; width: 1em; height: 1em; overflow: hidden;
-  white-space: nowrap; line-height: 1; vertical-align: middle; flex-shrink: 0;
-}
+/* Icon names must never show as words while the icon font loads */
+.material-symbols-outlined { display: inline-block; width: 1em; height: 1em; overflow: hidden; white-space: nowrap; line-height: 1; vertical-align: middle; flex-shrink: 0; }
 
-/* Floating hero badges: uses the "translate" property so it never fights Tailwind transforms */
-@keyframes floaty { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
-.float-badge { animation: floaty 5s ease-in-out infinite; }
-
-/* Buttons feel pressable */
-a[class*="rounded-full"], button[class*="rounded-full"] { transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease; }
-a[class*="rounded-full"]:hover, button[class*="rounded-full"]:hover { transform: translateY(-2px); }
-a[class*="rounded-full"]:active, button[class*="rounded-full"]:active { transform: scale(.97); }
-
-/* Toast (replaces ugly browser alert boxes) */
+/* Toast (replaces browser alert boxes) */
 #toast { position: fixed; left: 50%; bottom: 1.5rem; transform: translate(-50%, 160%); transition: transform .3s ease;
-  background: #0f172a; color: #fff; padding: .85rem 1.4rem; border-radius: 9999px; font-weight: 600;
-  z-index: 200; max-width: 92vw; text-align: center; box-shadow: 0 20px 40px -10px rgba(15,23,42,.4); }
+  background: #0f172a; color: #fff; padding: .85rem 1.4rem; border-radius: 9999px; font-weight: 600; z-index: 300;
+  max-width: 92vw; text-align: center; box-shadow: 0 20px 40px -10px rgba(15,23,42,.4); }
 #toast.show { transform: translate(-50%, 0); }
 
-/* Keyboard focus */
+/* Mobile menu for website pages */
+#menu-btn { display: none; width: 2.6rem; height: 2.6rem; border-radius: 9999px; align-items: center; justify-content: center;
+  background: rgba(238,242,255,.9); color: #1e40af; flex-shrink: 0; }
+#mobile-menu { display: none; margin-top: .5rem; padding: .75rem; border-radius: 1.5rem; background: #fff;
+  box-shadow: 0 20px 40px -12px rgba(15,23,42,.25); border: 1px solid #e2e8f0; }
+#mobile-menu.open { display: block; animation: menuIn .25s ease both; }
+#mobile-menu a { display: block; padding: .8rem 1rem; border-radius: .9rem; font-weight: 600; color: #475569; }
+#mobile-menu a:hover { background: #eef2ff; color: #1e40af; }
+@media (max-width: 1023px) { #menu-btn { display: inline-flex; } }
+@media (min-width: 1024px) { #mobile-menu { display: none !important; } }
+
+/* LMS: sidebar becomes a slide-in drawer on small screens */
+#lms-burger { display: none; width: 2.6rem; height: 2.6rem; border-radius: 9999px; align-items: center; justify-content: center;
+  background: #eef2ff; color: #1e40af; margin-right: .75rem; flex-shrink: 0; }
+#lms-overlay { position: fixed; inset: 0; background: rgba(15,23,42,.45); backdrop-filter: blur(2px); opacity: 0; pointer-events: none; transition: opacity .3s ease; z-index: 45; }
+@media (max-width: 1023px) {
+  #lms-burger { display: inline-flex; }
+  body[data-kind="lms"] aside { transform: translateX(-100%); transition: transform .3s ease; z-index: 60 !important; }
+  body[data-kind="lms"].nav-open aside { transform: none; }
+  body.nav-open #lms-overlay { opacity: 1; pointer-events: auto; }
+  body[data-kind="lms"] .pl-72 { padding-left: 0 !important; }
+  body[data-kind="lms"] header.left-72 { left: 0 !important; padding-left: 1rem; padding-right: 1rem; }
+}
+
 :focus-visible { outline: 3px solid #0d9488; outline-offset: 2px; }
 ::selection { background: #86f2e4; }
+@keyframes menuIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+/* Website header on tablets and phones: keep it to logo + login + menu button */
+@media (max-width: 899px) {
+  body[data-kind="public"] header a[href^="https://wa.me"] { display: none; }
+  body[data-kind="public"] header a[data-path="home"] { white-space: nowrap; }
+  body[data-kind="public"] header a[data-path="home"] > div:last-child > span:last-child { display: none; }
+  body[data-kind="public"] header a[data-path="student-lms"] { padding-left: .9rem; padding-right: .9rem; white-space: nowrap; }
+  body[data-kind="public"] header > div > div:first-child { gap: .5rem; }
+}
+@media (max-width: 479px) {
+  body[data-kind="public"] header a[data-path="student-lms"] span:last-child { display: none; }
+  body[data-kind="public"] header a[data-path="student-lms"] { padding-left: .7rem; padding-right: .7rem; }
 }
 
-/* Mobile overflow fixes */
-html, body { overflow-x: clip; }
-.truncate { min-width: 0; }
-*:has(> .truncate) { min-width: 0; }
-h1, h2, h3 { overflow-wrap: anywhere; }
-@media (max-width: 640px) {
-  .flex.items-center.gap-2:has(> button.w-8), .flex.items-center.gap-3:has(> button.w-8) { flex-wrap: wrap; }
+/* ---- Header: same single-line layout on every website page ---- */
+body[data-kind="public"] header a,
+body[data-kind="public"] header nav a,
+body[data-kind="public"] header p,
+body[data-kind="public"] header span { white-space: nowrap; }
+body[data-kind="public"] header nav { gap: .25rem; }
+body[data-kind="public"] header nav a { padding: .5rem 1rem; }
+/* menu shows only when there is room (1280px+), otherwise the hamburger is used */
+@media (max-width: 1279px) {
+  body[data-kind="public"] header nav { display: none !important; }
+  #menu-btn { display: inline-flex !important; }
 }
-@media (max-width: 640px) {
-  h1.text-headline-lg { font-size: 28px; line-height: 36px; }
-  header a.whitespace-nowrap { padding-left: .9rem; padding-right: .9rem; }
+@media (min-width: 1280px) {
+  body[data-kind="public"] header nav { display: flex !important; }
+  #menu-btn, #mobile-menu { display: none !important; }
 }
-main { padding-top: 6.75rem !important; }
+
+/* ---- Font fallbacks (so text never turns into a serif font if Google Fonts is slow) ---- */
+html body [class*="font-headline"], html body [class*="font-display"] { font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+html body [class*="font-body"], html body [class*="font-caption"] { font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+html body [class*="font-label-mono"] { font-family: "JetBrains Mono", ui-monospace, Consolas, monospace; }
+
+/* ---- Tidier text ---- */
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+/* ---- Breathing room under the fixed website header ---- */
+body[data-kind="public"] main { padding-top: 7.25rem; }
+body[data-kind="public"] main > section:first-child { margin-top: 0; }
+body[data-kind="public"] .sticky.top-20 { top: 5.5rem; }
